@@ -3,7 +3,7 @@ Contributors: sunwu2007
 Tags: twitter, twitter signature, twitter signatures, twitter counter, signature, counter, twitter generator
 Requires at least: 2.8.6
 Tested up to: 2.9
-
+Stable tag: trunk
 
 == Description ==
 With twitHut Twitter Signatures Wordpress widget, you can select from more than 120+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
@@ -23,7 +23,8 @@ With twitHut Twitter Signatures Wordpress widget, you can select from more than 
 If you have questions, please send to support[at]vivociti[dot]com
 
 == Screenshots ==
-1. Wordpress Admin Setting (1)
+
+1. Wordpress Admin Setting
 2. Wordpress Admin Setting (More than 120+ styles to select)
 3. Wordpress Front Page Display
 4. Example of available Twitter Signatures to select from Wordpress Admin (1)
@@ -38,4 +39,3 @@ If you have questions, please send to support[at]vivociti[dot]com
 initial release
 
 
-Stable tag: trunk
