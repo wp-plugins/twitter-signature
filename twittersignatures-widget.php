@@ -2,10 +2,10 @@
 /*
  * Plugin Name: TwitterSignatures
  * Version: 1.1
- * Plugin URI: http://www.twithut.com
+ * Plugin URI: http://wordpress.org/extend/plugins/twitter-signature
  * Description: With twitHut Twitter Signatures Wordpress widget, you can select from more than 120+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
  * Author: Sunento Agustiar Wu
- * Author URI: http://www.vivociti.com
+ * Author URI: http://www.twithut.com
  * License: GNU/GPL http://www.gnu.org/copyleft/gpl.html
  */
 class TwitterSignaturesWidget extends WP_Widget
@@ -38,7 +38,7 @@ class TwitterSignaturesWidget extends WP_Widget
 			echo $before_title . $title . $after_title;
 		
 		# Render the Widget
-		echo '<a href="http://twitter.com/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' - Powered by TwitHut.com"><img src="http://www.twithut.com/twittersignature.php?twitterusername=' . $twitterUserName . '&signatureID=' . $signatureStyle . '" border=0></a>';
+		echo '<a href="http://twitter.com/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' - TwitHut.com"><img src="http://www.twithut.com/twittersignature.php?twitterusername=' . $twitterUserName . '&signatureID=' . $signatureStyle . '" border=0></a>';
 
 		# After the widget
 		echo $after_widget;
