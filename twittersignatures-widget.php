@@ -1,11 +1,11 @@
 <?php
 /*
  * Plugin Name: TwitterSignatures
- * Version: 1.0.1
- * Plugin URI: http://wordpress.org/extend/plugins/twitter-signature
+ * Version: 1.1
+ * Plugin URI: http://www.twithut.com
  * Description: With twitHut Twitter Signatures Wordpress widget, you can select from more than 120+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
  * Author: Sunento Agustiar Wu
- * Author URI: http://www.twithut.com
+ * Author URI: http://www.vivociti.com
  * License: GNU/GPL http://www.gnu.org/copyleft/gpl.html
  */
 class TwitterSignaturesWidget extends WP_Widget
@@ -38,7 +38,7 @@ class TwitterSignaturesWidget extends WP_Widget
 			echo $before_title . $title . $after_title;
 		
 		# Render the Widget
-		echo '<a href="http://twitter.com/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' - TwitHut.com"><img src="http://www.twithut.com/twittersignature.php?twitterusername=' . $twitterUserName . '&signatureID=' . $signatureStyle . '" border=0></a>';
+		echo '<a href="http://twitter.com/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' - Powered by TwitHut.com"><img src="http://www.twithut.com/twittersignature.php?twitterusername=' . $twitterUserName . '&signatureID=' . $signatureStyle . '" border=0></a>';
 
 		# After the widget
 		echo $after_widget;
@@ -77,6 +77,18 @@ class TwitterSignaturesWidget extends WP_Widget
 		# Fill Twitter Signatures Style Selection
 		echo '<p style="text-align:right;"><label for="' . $this->get_field_name('signatureStyle') . '">' . __('Signature Style:') . ' <select name="' . $this->get_field_name('signatureStyle')  . '" id="' . $this->get_field_id('signatureStyle')  . '">"';
 ?>
+		<option value="121" <?php if ($signatureStyle == '121') echo 'selected="yes"'; ?> >Counter 1 (150x90)</option>
+		<option value="122" <?php if ($signatureStyle == '122') echo 'selected="yes"'; ?> >Counter 2 (150x90)</option>
+		<option value="123" <?php if ($signatureStyle == '123') echo 'selected="yes"'; ?> >Counter 3 (150x90)</option>
+		<option value="124" <?php if ($signatureStyle == '124') echo 'selected="yes"'; ?> >Counter 4 (150x90)</option>
+		<option value="125" <?php if ($signatureStyle == '125') echo 'selected="yes"'; ?> >Counter 5 (150x90)</option>
+		<option value="126" <?php if ($signatureStyle == '126') echo 'selected="yes"'; ?> >Counter 6 (150x90)</option>
+		<option value="127" <?php if ($signatureStyle == '127') echo 'selected="yes"'; ?> >Counter 7 (150x90)</option>
+		<option value="128" <?php if ($signatureStyle == '128') echo 'selected="yes"'; ?> >Counter 8 (150x90)</option>
+		<option value="129" <?php if ($signatureStyle == '129') echo 'selected="yes"'; ?> >Counter 9 (150x90)</option>
+		<option value="130" <?php if ($signatureStyle == '130') echo 'selected="yes"'; ?> >Counter 10 (150x90)</option>
+		<option value="131" <?php if ($signatureStyle == '131') echo 'selected="yes"'; ?> >Counter 11 (150x90)</option>
+		<option value="132" <?php if ($signatureStyle == '132') echo 'selected="yes"'; ?> >Counter 12 (150x90)</option>
 		<option value="40" <?php if ($signatureStyle == '40') echo 'selected="yes"'; ?> >Special 1 (160x200)</option>
 		<option value="42" <?php if ($signatureStyle == '42') echo 'selected="yes"'; ?> >Special 2 (160x200)</option>
 		 <option value="43" <?php if ($signatureStyle == '43') echo 'selected="yes"'; ?> >Special 3 (160x200)</option>

@@ -38,4 +38,7 @@ If you have questions, please send to support[at]vivociti[dot]com
 = v1.0 05.12.2010 =
 initial release
 
+= v1.1 05.27.2010 =
+adding new collection set for Counter styles
+
 
