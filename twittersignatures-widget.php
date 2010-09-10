@@ -1,9 +1,10 @@
 <?php
 /*
  * Plugin Name: TwitterSignatures
- * Version: 1.1
+ * Version: 1.2
  * Plugin URI: http://wordpress.org/extend/plugins/twitter-signature
- * Description: With twitHut Twitter Signatures Wordpress widget, you can select from more than 120+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
+ * Description: With twitHut Twitter Signatures Wordpress widget, you can select from more than 500+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
+ * Latest version will require you to login once using OAuth
  * Author: Sunento Agustiar Wu
  * Author URI: http://www.twithut.com
  * License: GNU/GPL http://www.gnu.org/copyleft/gpl.html
@@ -195,7 +196,64 @@ class TwitterSignaturesWidget extends WP_Widget
 		 <option value="27" <?php if ($signatureStyle == '27') echo 'selected="yes"'; ?> >Medium 27 (312x92)</option>
 		 <option value="28" <?php if ($signatureStyle == '28') echo 'selected="yes"'; ?> >Medium 28 (312x92)</option>
 		 <option value="29" <?php if ($signatureStyle == '29') echo 'selected="yes"'; ?> >Medium 29 (312x92)</option>
-		 <option value="30" <?php if ($signatureStyle == '30') echo 'selected="yes"'; ?> >Medium 30 (312x92)</option>		 
+		 <option value="30" <?php if ($signatureStyle == '30') echo 'selected="yes"'; ?> >Medium 30 (312x92)</option>
+		<option value="220" <?php if ($signatureStyle == '220') echo 'selected="yes"'; ?> >Premium (iPhone Model)</option>
+		<option value="211" <?php if ($signatureStyle == '211') echo 'selected="yes"'; ?> >Premium (iPOD Model 1)</option>
+		<option value="212" <?php if ($signatureStyle == '212') echo 'selected="yes"'; ?> >Premium (iPOD Model 2)</option>
+		<option value="213" <?php if ($signatureStyle == '213') echo 'selected="yes"'; ?> >Premium (iPOD Model 3)</option>
+		<option value="214" <?php if ($signatureStyle == '214') echo 'selected="yes"'; ?> >Premium (iPOD Model 4)</option>
+		<option value="215" <?php if ($signatureStyle == '215') echo 'selected="yes"'; ?> >Premium (iPOD Model 5)</option>
+		<option value="216" <?php if ($signatureStyle == '216') echo 'selected="yes"'; ?> >Premium (iPOD Model 6)</option>
+		<option value="217" <?php if ($signatureStyle == '217') echo 'selected="yes"'; ?> >Premium (iPOD Model 7)</option>
+		<option value="218" <?php if ($signatureStyle == '218') echo 'selected="yes"'; ?> >Premium (iPOD Model 8)</option>
+		<option value="219" <?php if ($signatureStyle == '219') echo 'selected="yes"'; ?> >Premium (iPOD Model 9)</option>
+		<option value="164" <?php if ($signatureStyle == '164') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="165" <?php if ($signatureStyle == '165') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="166" <?php if ($signatureStyle == '166') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="167" <?php if ($signatureStyle == '167') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="168" <?php if ($signatureStyle == '168') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="169" <?php if ($signatureStyle == '169') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="170" <?php if ($signatureStyle == '170') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="171" <?php if ($signatureStyle == '171') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="172" <?php if ($signatureStyle == '172') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="173" <?php if ($signatureStyle == '173') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="174" <?php if ($signatureStyle == '174') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="176" <?php if ($signatureStyle == '176') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="177" <?php if ($signatureStyle == '177') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="178" <?php if ($signatureStyle == '178') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="179" <?php if ($signatureStyle == '179') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="180" <?php if ($signatureStyle == '180') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="181" <?php if ($signatureStyle == '181') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="182" <?php if ($signatureStyle == '182') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="183" <?php if ($signatureStyle == '183') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="184" <?php if ($signatureStyle == '184') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="185" <?php if ($signatureStyle == '185') echo 'selected="yes"'; ?> >Premium (172x326)</option>
+		<option value="186" <?php if ($signatureStyle == '186') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="187" <?php if ($signatureStyle == '187') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="188" <?php if ($signatureStyle == '188') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="189" <?php if ($signatureStyle == '189') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="190" <?php if ($signatureStyle == '190') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="191" <?php if ($signatureStyle == '191') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="192" <?php if ($signatureStyle == '192') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="193" <?php if ($signatureStyle == '193') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="194" <?php if ($signatureStyle == '194') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="195" <?php if ($signatureStyle == '195') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="196" <?php if ($signatureStyle == '196') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="197" <?php if ($signatureStyle == '197') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="198" <?php if ($signatureStyle == '198') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="199" <?php if ($signatureStyle == '199') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="200" <?php if ($signatureStyle == '200') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="201" <?php if ($signatureStyle == '201') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="202" <?php if ($signatureStyle == '202') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="203" <?php if ($signatureStyle == '203') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="204" <?php if ($signatureStyle == '204') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="205" <?php if ($signatureStyle == '205') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="206" <?php if ($signatureStyle == '206') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="207" <?php if ($signatureStyle == '207') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="208" <?php if ($signatureStyle == '208') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="209" <?php if ($signatureStyle == '209') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+		<option value="210" <?php if ($signatureStyle == '210') echo 'selected="yes"'; ?> >Premium (320x252)</option>
+				 
 <?php
 		echo '</select></label>';
 			

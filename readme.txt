@@ -18,6 +18,7 @@ With twitHut Twitter Signatures Wordpress widget, you can select from more than 
 * You can activate it now
 * Finally, add the widget to your sidebar through the 'Appearance > Widgets' menu
 * Go to your widget and adjust the settings
+* To enjoy more features visit TwitHut.com and login once using Twitter OAuth 
 
 == Frequntly Asked Qustions ==
 If you have questions, please send to support[at]vivociti[dot]com
@@ -40,5 +41,8 @@ initial release
 
 = v1.1 05.27.2010 =
 adding new collection set for Counter styles
+
+= v1.2 09.09.2010 =
+adding new collection set & OAuth Support
 
 
