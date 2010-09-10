@@ -1,12 +1,12 @@
 === Twitter Signatures Widget ===
 Contributors: sunwu2007
-Tags: twitter, twitter signature, twitter signatures, twitter counter, signature, counter, twitter generator
+Tags: twitter, twitter signature, twitter signatures, twitter counter, signature, counter, twitter generator, BuddyPress
 Requires at least: 2.8.6
-Tested up to: 2.9
+Tested up to: 3.0
 Stable tag: trunk
 
 == Description ==
-With twitHut Twitter Signatures Wordpress widget, you can select from more than 120+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
+With twitHut Twitter Signatures Wordpress widget, you can select from more than 120+ different types of cool Twitter signature image, Twitter counter and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends. On the other side, it is a good way to increase popularity to your website & Twitter profile with TwitHut's Hall of Fame & Top Member Feature section.
 
 == Installation ==
 
