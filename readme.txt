@@ -2,7 +2,7 @@
 Contributors: sunwu2007
 Tags: twitter, twitter signature, twitter signatures, twitter counter, signature, counter, twitter generator, BuddyPress
 Requires at least: 2.8.6
-Tested up to: 3.0
+Tested up to: 3.1
 Stable tag: trunk
 
 == Description ==
@@ -44,5 +44,9 @@ adding new collection set for Counter styles
 
 = v1.2 09.09.2010 =
 adding new collection set & OAuth Support
+
+= v1.3 03.06.2011 =
+Tested with WP 3.1
+
 
 
