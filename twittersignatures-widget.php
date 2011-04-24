@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: TwitterSignatures
- * Version: 1.3
+ * Version: 1.4
  * Plugin URI: http://wordpress.org/extend/plugins/twitter-signature
  * Description: With twitHut Twitter Signatures Wordpress widget, you can select from more than 500+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
  * Latest version will require you to login once using OAuth
@@ -199,7 +199,17 @@ class TwitterSignaturesWidget extends WP_Widget
 		 <option value="27" <?php if ($signatureStyle == '27') echo 'selected="yes"'; ?> >Medium 27 (312x92)</option>
 		 <option value="28" <?php if ($signatureStyle == '28') echo 'selected="yes"'; ?> >Medium 28 (312x92)</option>
 		 <option value="29" <?php if ($signatureStyle == '29') echo 'selected="yes"'; ?> >Medium 29 (312x92)</option>
-		 <option value="30" <?php if ($signatureStyle == '30') echo 'selected="yes"'; ?> >Medium 30 (312x92)</option>
+		 <option value="30" <?php if ($signatureStyle == '30') echo 'selected="yes"'; ?> >Medium 30 (312x92)</option>		 
+		 <option value="223" <?php if ($signatureStyle == '223') echo 'selected="yes"'; ?> >Premium Badge 1(131x182)</option>
+		 <option value="224" <?php if ($signatureStyle == '224') echo 'selected="yes"'; ?> >Premium Badge 2(131x182)</option>
+		 <option value="225" <?php if ($signatureStyle == '225') echo 'selected="yes"'; ?> >Premium Badge 3(131x182)</option>
+		 <option value="226" <?php if ($signatureStyle == '226') echo 'selected="yes"'; ?> >Premium Badge 4(131x182)</option>
+		 <option value="227" <?php if ($signatureStyle == '227') echo 'selected="yes"'; ?> >Premium Badge 5(131x182)</option>
+		 <option value="228" <?php if ($signatureStyle == '228') echo 'selected="yes"'; ?> >Premium Badge 6(131x182)</option>
+		 <option value="229" <?php if ($signatureStyle == '229') echo 'selected="yes"'; ?> >Premium Badge 7(131x182)</option>
+		 <option value="230" <?php if ($signatureStyle == '230') echo 'selected="yes"'; ?> >Premium Badge 8(131x182)</option>
+		 <option value="231" <?php if ($signatureStyle == '231') echo 'selected="yes"'; ?> >Premium Badge 9(131x182)</option>
+		 <option value="232" <?php if ($signatureStyle == '232') echo 'selected="yes"'; ?> >Premium Badge 10(131x182)</option>
 		<option value="220" <?php if ($signatureStyle == '220') echo 'selected="yes"'; ?> >Premium (iPhone Model)</option>
 		<option value="211" <?php if ($signatureStyle == '211') echo 'selected="yes"'; ?> >Premium (iPOD Model 1)</option>
 		<option value="212" <?php if ($signatureStyle == '212') echo 'selected="yes"'; ?> >Premium (iPOD Model 2)</option>

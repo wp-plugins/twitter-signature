@@ -31,7 +31,7 @@ If you have questions, please send to support[at]vivociti[dot]com
 4. Example of available Twitter Signatures to select from Wordpress Admin (1)
 5. Example of available Twitter Signatures to select from Wordpress Admin (2)
 6. Example of generated Twitter Signatures with latest twits, counter, follower (friends) and total following
-
+7. Example of generated Twitter Signatures with Badge Model Set (131x182)
 
 
 == Changelog ==
@@ -47,6 +47,11 @@ adding new collection set & OAuth Support
 
 = v1.3 03.06.2011 =
 Tested with WP 3.1
+
+= v1.4 04.24.2011 =
+New Twitter Signature Set release (Badge - 131x182)
+
+
 
 
 
