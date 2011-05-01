@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: TwitterSignatures
- * Version: 1.4
+ * Version: 1.5
  * Plugin URI: http://wordpress.org/extend/plugins/twitter-signature
  * Description: With twitHut Twitter Signatures Wordpress widget, you can select from more than 500+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
  * Latest version will require you to login once using OAuth
@@ -39,7 +39,7 @@ class TwitterSignaturesWidget extends WP_Widget
 			echo $before_title . $title . $after_title;
 		
 		# Render the Widget
-		echo '<a href="http://twitter.com/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' - TwitHut.com"><img src="http://www.twithut.com/twittersignature.php?twitterusername=' . $twitterUserName . '&signatureID=' . $signatureStyle . '" border=0></a>';
+		echo '<a href="http://twithut.com/follow/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' - TwitHut.com"><img src="http://www.twithut.com/twitsigs/' . $signatureStyle . '/' . $twitterUserName . '.png' .   '" border=0></a>';
 
 		# After the widget
 		echo $after_widget;
@@ -219,7 +219,11 @@ class TwitterSignaturesWidget extends WP_Widget
 		<option value="216" <?php if ($signatureStyle == '216') echo 'selected="yes"'; ?> >Premium (iPOD Model 6)</option>
 		<option value="217" <?php if ($signatureStyle == '217') echo 'selected="yes"'; ?> >Premium (iPOD Model 7)</option>
 		<option value="218" <?php if ($signatureStyle == '218') echo 'selected="yes"'; ?> >Premium (iPOD Model 8)</option>
-		<option value="219" <?php if ($signatureStyle == '219') echo 'selected="yes"'; ?> >Premium (iPOD Model 9)</option>
+		<option value="219" <?php if ($signatureStyle == '219') echo 'selected="yes"'; ?> >Premium (iPOD Model 9)</option>		
+		<option value="233" <?php if ($signatureStyle == '233') echo 'selected="yes"'; ?> >Premium Bubble Up 1(248x220)</option>
+		<option value="234" <?php if ($signatureStyle == '234') echo 'selected="yes"'; ?> >Premium Bubble Up 2(248x220)</option>
+		<option value="235" <?php if ($signatureStyle == '235') echo 'selected="yes"'; ?> >Premium Bubble Up 3(248x220)</option>
+		<option value="236" <?php if ($signatureStyle == '236') echo 'selected="yes"'; ?> >Premium Bubble Up 4(248x220)</option>		 
 		<option value="164" <?php if ($signatureStyle == '164') echo 'selected="yes"'; ?> >Premium (172x326)</option>
 		<option value="165" <?php if ($signatureStyle == '165') echo 'selected="yes"'; ?> >Premium (172x326)</option>
 		<option value="166" <?php if ($signatureStyle == '166') echo 'selected="yes"'; ?> >Premium (172x326)</option>

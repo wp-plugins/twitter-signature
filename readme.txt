@@ -32,7 +32,7 @@ If you have questions, please send to support[at]vivociti[dot]com
 5. Example of available Twitter Signatures to select from Wordpress Admin (2)
 6. Example of generated Twitter Signatures with latest twits, counter, follower (friends) and total following
 7. Example of generated Twitter Signatures with Badge Model Set (131x182)
-
+8. Example of generated Twitter Signatures with Colorful Bubble Up Model Set (248x220)
 
 == Changelog ==
 
@@ -51,6 +51,8 @@ Tested with WP 3.1
 = v1.4 04.24.2011 =
 New Twitter Signature Set release (Badge - 131x182)
 
+= v1.5 05.01.2011 =
+New Twitter Signature Set release (Cute Colorful Bubble Up), Support Ad for Freemium Member to earn revenue
 
 
 
