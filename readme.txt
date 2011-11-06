@@ -2,7 +2,7 @@
 Contributors: sunwu2007
 Tags: twitter, twitter signature, twitter signatures, twitter counter, signature, counter, twitter generator, BuddyPress
 Requires at least: 2.8.6
-Tested up to: 3.1
+Tested up to: 3.2
 Stable tag: trunk
 
 == Description ==
@@ -54,6 +54,8 @@ New Twitter Signature Set release (Badge - 131x182)
 = v1.5 05.01.2011 =
 New Twitter Signature Set release (Cute Colorful Bubble Up), Support Ad for Freemium Member to earn revenue
 
+= v1.6 11.05.2011 =
+Update for Free Signature Styles
 
 
 

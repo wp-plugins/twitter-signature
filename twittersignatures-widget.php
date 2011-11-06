@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: TwitterSignatures
- * Version: 1.5
+ * Version: 1.6
  * Plugin URI: http://wordpress.org/extend/plugins/twitter-signature
  * Description: With twitHut Twitter Signatures Wordpress widget, you can select from more than 500+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
  * Latest version will require you to login once using OAuth
@@ -87,13 +87,13 @@ class TwitterSignaturesWidget extends WP_Widget
 		<option value="124" <?php if ($signatureStyle == '124') echo 'selected="yes"'; ?> >Counter 4 (150x90)</option>
 		<option value="125" <?php if ($signatureStyle == '125') echo 'selected="yes"'; ?> >Counter 5 (150x90)</option>
 		<option value="126" <?php if ($signatureStyle == '126') echo 'selected="yes"'; ?> >Counter 6 (150x90)</option>
-		<option value="127" <?php if ($signatureStyle == '127') echo 'selected="yes"'; ?> >Counter 7 (150x90)</option>
+		<option value="127" <?php if ($signatureStyle == '127') echo 'selected="yes"'; ?> >Counter 7 (150x90) - Free</option>
 		<option value="128" <?php if ($signatureStyle == '128') echo 'selected="yes"'; ?> >Counter 8 (150x90)</option>
 		<option value="129" <?php if ($signatureStyle == '129') echo 'selected="yes"'; ?> >Counter 9 (150x90)</option>
 		<option value="130" <?php if ($signatureStyle == '130') echo 'selected="yes"'; ?> >Counter 10 (150x90)</option>
 		<option value="131" <?php if ($signatureStyle == '131') echo 'selected="yes"'; ?> >Counter 11 (150x90)</option>
 		<option value="132" <?php if ($signatureStyle == '132') echo 'selected="yes"'; ?> >Counter 12 (150x90)</option>
-		<option value="40" <?php if ($signatureStyle == '40') echo 'selected="yes"'; ?> >Special 1 (160x200)</option>
+		<option value="40" <?php if ($signatureStyle == '40') echo 'selected="yes"'; ?> >Special 1 (160x200) - Free</option>
 		<option value="42" <?php if ($signatureStyle == '42') echo 'selected="yes"'; ?> >Special 2 (160x200)</option>
 		 <option value="43" <?php if ($signatureStyle == '43') echo 'selected="yes"'; ?> >Special 3 (160x200)</option>
 		 <option value="44" <?php if ($signatureStyle == '44') echo 'selected="yes"'; ?> >Special 4 (160x200)</option>
