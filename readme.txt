@@ -57,5 +57,8 @@ New Twitter Signature Set release (Cute Colorful Bubble Up), Support Ad for Free
 = v1.6 11.05.2011 =
 Update for Free Signature Styles
 
+= v1.7 12.10.2011 =
+Set default signature to free signature
+
 
 
