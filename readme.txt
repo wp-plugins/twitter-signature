@@ -1,8 +1,8 @@
 === Twitter Signatures Widget ===
 Contributors: sunwu2007
-Tags: twitter, twitter signature, twitter signatures, twitter counter, signature, counter, twitter generator, BuddyPress
+Tags: twitter, twitter signature, twitter signatures, twitter counter, signature, counter, twitter generator, twitter, twiter badge, BuddyPress
 Requires at least: 2.8.6
-Tested up to: 3.2
+Tested up to: 3.3.1
 Stable tag: trunk
 
 == Description ==
@@ -59,6 +59,10 @@ Update for Free Signature Styles
 
 = v1.7 12.10.2011 =
 Set default signature to free signature
+
+= v1.8 03.17.2012 =
+Option to turn on/off Interstitial Page for Premium Member
+
 
 
 

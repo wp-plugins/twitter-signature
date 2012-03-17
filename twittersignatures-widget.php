@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: TwitterSignatures
- * Version: 1.7
+ * Version: 1.8
  * Plugin URI: http://wordpress.org/extend/plugins/twitter-signature
  * Description: With twitHut Twitter Signatures Wordpress widget, you can select from more than 500+ different types of cool Twitter signature image and button to be displayed on your Wordpress website. It will display your latest twit message, followers and your friends.
  * Latest version will require you to login once using OAuth
@@ -30,6 +30,7 @@ class TwitterSignaturesWidget extends WP_Widget
 		$title = apply_filters('widget_title', empty($instance['title']) ? 'Twitter Signatures' : $instance['title']);
 		$twitterUserName = empty($instance['twitterUserName']) ? 'twithut' : $instance['twitterUserName'];
 		$signatureStyle = empty($instance['signatureStyle']) ? '40' : $instance['signatureStyle'];
+		$interstitial = empty($instance['interstitial']) ? 'no' : $instance['interstitial'];
 				
 		# Before the widget
 		echo $before_widget;
@@ -39,8 +40,11 @@ class TwitterSignaturesWidget extends WP_Widget
 			echo $before_title . $title . $after_title;
 		
 		# Render the Widget
-		echo '<a href="http://twithut.com/follow/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' - TwitHut.com"><img src="http://www.twithut.com/twitsigs/' . $signatureStyle . '/' . $twitterUserName . '.png' .   '" border=0></a>';
-
+		if ($interstitial == 'yes') {
+			echo '<a href="http://twithut.com/follow/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' "><img src="http://twithut.com/twitsigs/' . $signatureStyle . '/' . $twitterUserName . '.png' .   '" border=0></a>';
+		} else {
+			echo '<a href="http://twitter.com/' . $twitterUserName . '" title="Follow ' . $twitterUserName . ' "><img src="http://twithut.com/twitsigs/' . $signatureStyle . '/' . $twitterUserName . '.png' .   '" border=0></a>';
+		}
 		# After the widget
 		echo $after_widget;
 	}
@@ -54,7 +58,8 @@ class TwitterSignaturesWidget extends WP_Widget
 		$instance['title'] = strip_tags(stripslashes($new_instance['title']));
 		$instance['twitterUserName'] = strip_tags(stripslashes($new_instance['twitterUserName']));
 		$instance['signatureStyle'] = strip_tags(stripslashes($new_instance['signatureStyle']));
-				
+		$instance['interstitial'] = strip_tags(stripslashes($new_instance['interstitial']));
+		
 		return $instance;
 	}
 	
@@ -64,11 +69,12 @@ class TwitterSignaturesWidget extends WP_Widget
 	*/
 	function form($instance){
 		//Defaults
-		$instance = wp_parse_args( (array) $instance, array('title'=>'', 'twitterUserName'=>'twithut', 'signatureStyle'=>'70') );
+		$instance = wp_parse_args( (array) $instance, array('title'=>'', 'twitterUserName'=>'twithut', 'interstitial'=>'no', 'signatureStyle'=>'70') );
 		
 		$title = htmlspecialchars($instance['title']);
 		$twitterUserName = htmlspecialchars($instance['twitterUserName']);
 		$signatureStyle = htmlspecialchars($instance['signatureStyle']);
+		
 		
 		#Some intro for this widget
 		echo '<p style="text-align:left;">Please visit <a href="http://www.twithut.com" target="_blank">our main website</a> and login once using Twitter OAuth before you start using this plugin. (You need to follow Step 1 and Step 2 and you do not have to register to start using it.)</p><hr/>';
@@ -77,6 +83,14 @@ class TwitterSignaturesWidget extends WP_Widget
 		echo '<p style="text-align:right;"><label for="' . $this->get_field_name('title') . '">' . __('Title:') . ' <input style="width: 250px;" id="' . $this->get_field_id('title') . '" name="' . $this->get_field_name('title') . '" type="text" value="' . $title . '" /></label></p>';
 		# Fill TwitterSignatures ID
 		echo '<p style="text-align:right;"><label for="' . $this->get_field_name('twitterUserName') . '">' . __('Twitter Username:') . ' <input style="width: 100px;" id="' . $this->get_field_id('twitterUserName') . '" name="' . $this->get_field_name('twitterUserName') . '" type="text" value="' . $twitterUserName . '" /></label></p>';
+		
+		# Interstitial Feature : option to select YEs or No 
+		echo '<p style="text-align:right;"><label for="' . $this->get_field_name('interstitial') . '">' . __('Turn On Interstitial Feature (Premium Member)') . ' <select name="' . $this->get_field_name('interstitial')  . '" id="' . $this->get_field_id('interstitial')  . '">"';
+?>
+		<option value="no" <?php if ($interstitial == 'no') echo 'selected="yes"'; ?> >No</option>
+		<option value="yes" <?php if ($interstitial == 'yes') echo 'selected="yes"'; ?> >Yes</option>			 
+<?php
+		echo '</select></label>';
 		
 		# Fill Twitter Signatures Style Selection
 		echo '<p style="text-align:right;"><label for="' . $this->get_field_name('signatureStyle') . '">' . __('Signature Style:') . ' <select name="' . $this->get_field_name('signatureStyle')  . '" id="' . $this->get_field_id('signatureStyle')  . '">"';
